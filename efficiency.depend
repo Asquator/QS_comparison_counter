@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1671141930 source:/home/acf/Programming/algo_MMN13/driver.c
+	<stdio.h>
+	<string.h>
+	"quicksort.h"
+
+1671804359 /home/acf/Programming/algo_MMN13/quicksort.h
+	<vector>
+	"counter.h"
+
+1671141448 source:/home/acf/Programming/algo_MMN13/generator.c
+
+1671139563 source:/home/acf/Programming/algo_MMN13/quicksort.c
+	<stdio.h>
+	<stdlib.h>
+	"quicksort.h"
+
+1671050798 source:/home/acf/Programming/algo_MMN13/select.c
+	<limits.h>
+	<stdlib.h>
+
+1671892137 source:/home/acf/Programming/algo_MMN13/generator.cpp
+	<algorithm>
+	<vector>
+	<cstddef>
+	"aux.h"
+
+1671829517 source:/home/acf/Programming/algo_MMN13/quicksort.cpp
+	<iostream>
+	<vector>
+	"quicksort.h"
+	"counter.h"
+	"aux.h"
+
+1671893804 source:/home/acf/Programming/algo_MMN13/select.cpp
+	<climits>
+	<cstddef>
+	<vector>
+	<stdexcept>
+	<iostream>
+	"quicksort.h"
+	"aux.h"
+
+1671896489 source:/home/acf/Programming/algo_MMN13/driver.cpp
+	<iostream>
+	<cstring>
+	<vector>
+	<cstdlib>
+	<ctime>
+	"quicksort.h"
+	"counter.h"
+	"aux.h"
+	"select.h"
+
+1671895173 source:/home/acf/Programming/algo_MMN13/counter.cpp
+	<vector>
+	<iostream>
+	<cstddef>
+	<climits>
+	"counter.h"
+	"quicksort.h"
+	"aux.h"
+	"select.h"
+
+1671895185 /home/acf/Programming/algo_MMN13/counter.h
+	<cstddef>
+
+1671890967 /home/acf/Programming/algo_MMN13/aux.h
+	<vector>
+	<cstddef>
+	<ctime>
+	<cstdlib>
+
+1671890953 source:/home/acf/Programming/algo_MMN13/aux.cpp
+	<iostream>
+	"aux.h"
+	<climits>
+
+1671822518 /home/acf/Programming/algo_MMN13/select.h
+
