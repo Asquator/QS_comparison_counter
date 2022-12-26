@@ -1,8 +1,7 @@
 CC = g++
 CFLAGS = -Wall
 OBJS = driver.o generator.o quicksort.o select.o aux.o counter.o
-PROG = efficiency_checker
-
+PROG = QS_comparison_counter
 $(PROG):	$(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $@
 

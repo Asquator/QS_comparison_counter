@@ -1,3 +1,9 @@
+/*
+Basic imlementation of selection algorithms.
+May be inefficient when an array contains many identical numbers
+*/
+
+
 #include <climits>
 #include <cstddef>
 #include <vector>
@@ -15,6 +21,7 @@ static size_t sort_find_median(vector<int>& a, size_t l, size_t r){
     return a[(r+l)/2];
 }
 
+//deterministic select algorithm, implemented for analytic purposes. Not recommended for use in this project due to allocation overheads
 int select_deter(vector<int>& arr, size_t l, size_t r, size_t k){
     // If k is smaller than number of elements in array
     if (k <= 0 || k > r - l + 1)
@@ -50,7 +57,7 @@ int select_deter(vector<int>& arr, size_t l, size_t r, size_t k){
     return select_deter(arr, pivot+1, r, k-pivot+l-1);
 }
 
-
+//classical randomized quickselect algorithm, primarily used in the project. selects the k-th order statistic and partitions around it
 int select_randomized(vector<int>& arr, size_t l, size_t r, size_t k){
      // If k is smaller than number of elements in array
     if (k <= 0 || k > r - l + 1)
@@ -60,7 +67,6 @@ int select_randomized(vector<int>& arr, size_t l, size_t r, size_t k){
         return arr[l];
 
     int pivot = random_range(l, r);
-    std::cout << "RANDOM: " << pivot << std::endl;
     pivot = partition_custom(arr, l, r, pivot);
 
      // if position is same as k

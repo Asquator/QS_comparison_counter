@@ -19,6 +19,8 @@ void quicksort_medof3(vector<int>& a){
     qs_medof3(a, 0, a.size() - 1);
 }
 
+
+//regular quicksort algorithm
 static void qs_regular(vector<int>& a, int l, int r){
     int pivot;
     if(l >= r) return;
@@ -27,6 +29,8 @@ static void qs_regular(vector<int>& a, int l, int r){
     qs_regular(a, pivot+1, r);
 }
 
+
+//quicksort median of three algorithm
 static int pivot_medof3(const vector<int>& a, int l, int r);
 static void qs_medof3(vector<int>& a, int l, int r){
     int pivot;
@@ -37,6 +41,7 @@ static void qs_medof3(vector<int>& a, int l, int r){
     qs_medof3(a, pivot+1, r);
 }
 
+//pivot selection for median of three algorithm
 static int pivot_medof3(const vector<int>& a, int l, int r){
     int mid = (l+r)/2;
     inc_comp_counter(2); //two comparisons are made
@@ -45,15 +50,15 @@ static int pivot_medof3(const vector<int>& a, int l, int r){
     return a[l] < a[r] ? l : r;
 }
 
-/*
+
 //partition_custom: divide elements in the array using the given pivot index
 //if count is true, counts comparisons (counter should be initialized)
-*/
+
 int partition_custom(vector<int>& a, int l, int r, int pivot, bool count /*= false */){
     int i = l;
     std::swap(a[pivot], a[r]); //placing the pivot in the end
     for(int j = l; j < r; j++){
-        if(count)
+        if(count)   //if count is enable, count the comparison
             inc_comp_counter(1);
 
         if(a[j] <= a[r])

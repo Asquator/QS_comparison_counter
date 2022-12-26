@@ -13,6 +13,8 @@ void fill_id_perm(vector<int>& a){
         a[i] = i+1;
 }
 
+//fills an array with a random permutation from a given range. isn't used in the main branch, added to future extension of the project
+//which will check the algorithms on random long permutations
 void fill_random_perm(vector<int>& a, int lower, int upper){
     for(size_t i = 0; i < a.size(); i++){
         a[i] = random_range(lower, upper);
