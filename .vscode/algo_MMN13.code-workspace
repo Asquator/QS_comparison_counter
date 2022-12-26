@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "C_Cpp_Runner.cCompilerPath": "/usr/bin/gcc",
+        "C_Cpp_Runner.cppCompilerPath": "/usr/bin/g++",
+        "C_Cpp_Config.cCompilerPath": "/usr/bin/gcc",
+        "C_Cpp_Config.cppCompilerPath": "/usr/bin/g++",
+        "C_Cpp_Runner.cppStandard": "c++11",
+        "C_Cpp_Runner.cStandard": "c89"
+    }
+}

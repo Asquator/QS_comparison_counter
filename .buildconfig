@@ -1,0 +1,11 @@
+[default-2]
+name=Default (Copy)
+runtime=host
+toolchain=default
+config-opts=
+run-opts=
+prefix=/home/acf/.cache/gnome-builder/install/algo_MMN13/host
+app-id=
+postbuild=
+prebuild=
+run-command=

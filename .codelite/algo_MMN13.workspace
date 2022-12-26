@@ -1,0 +1,18 @@
+{
+ "selected_config": "Debug",
+ "configs": [{
+   "name": "Debug",
+   "flags": 0,
+   "compile_flags": [],
+   "executable": "/home/acf/Programming/algo_MMN13/efficiency_checker",
+   "arguments": "",
+   "environment": "",
+   "compiler": "",
+   "remoteFolder": "",
+   "remoteAccount": "",
+   "workingDirectory": "/home/acf/Programming/algo_MMN13",
+   "debuggerPath": "/usr/bin/gdb",
+   "debuggerCommands": "",
+   "last_executables": ["/home/acf/Programming/algo_MMN13/efficiency_checker"]
+  }]
+}
